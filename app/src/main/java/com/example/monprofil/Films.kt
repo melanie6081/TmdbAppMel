@@ -206,7 +206,7 @@ fun Films(windowClass: WindowSizeClass, navController: NavController){
                         Card( modifier = Modifier
                             .fillMaxWidth()
                             .padding(15.dp)
-                            .clickable {navController.navigate("detailsfilm/{filmID}")}){
+                            .clickable {navController.navigate("detailsfilm/"+it.id)}){
                             Column(horizontalAlignment = Alignment.CenterHorizontally){
                                 if (it.poster_path != null){
                                     AsyncImage(
@@ -253,7 +253,7 @@ fun Films(windowClass: WindowSizeClass, navController: NavController){
                         Card( modifier = Modifier
                             .fillMaxWidth()
                             .padding(15.dp)
-                            .clickable {navController.navigate("detailsfilm/{filmID}")}){
+                            .clickable {navController.navigate("detailsfilm/"+it.id)}){
                             Column(horizontalAlignment = Alignment.CenterHorizontally){
                                 if (it.poster_path != null){
                                     AsyncImage(

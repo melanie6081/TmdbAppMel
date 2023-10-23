@@ -48,9 +48,7 @@ class MainActivity : ComponentActivity() {
                         composable("films") { Films(windowSizeClass, navController) }
                         composable("series") { Series(windowSizeClass, navController) }
                         composable("actors") { Actors(windowSizeClass, navController) }
-                        /**composable("SearchSreen/{search}") { backStackEntry ->
-                            val search = backStackEntry.arguments?.getString("search") ?: ""
-                            SearchScreen(windowSizeClass, navController, search) }**/
+
                         composable("detailsfilm/{filmID}"){ backStackEntry ->
                             val filmID = backStackEntry.arguments?.getString("filmID")?:""
                             DetailsFilm(windowSizeClass, navController, filmID)}
