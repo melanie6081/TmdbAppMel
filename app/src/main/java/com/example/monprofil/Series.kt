@@ -197,7 +197,7 @@ fun Series(windowClass: WindowSizeClass, navController: NavController){
                         Card( modifier = Modifier
                             .fillMaxWidth()
                             .padding(15.dp)
-                            .clickable { navController.navigate("detailsserie/{serieID}") }){
+                            .clickable { navController.navigate("detailsserie/"+it.id) }){
                             Column(horizontalAlignment = Alignment.CenterHorizontally){
                                 if (it.poster_path != null){
                                     AsyncImage(
@@ -245,7 +245,7 @@ fun Series(windowClass: WindowSizeClass, navController: NavController){
                         Card( modifier = Modifier
                             .fillMaxWidth()
                             .padding(15.dp)
-                            .clickable { navController.navigate("detailsserie/{serieID}") }){
+                            .clickable { navController.navigate("detailsserie/"+it.id) }){
                             Column(horizontalAlignment = Alignment.CenterHorizontally){
                                 if (it.poster_path != null){
                                     AsyncImage(

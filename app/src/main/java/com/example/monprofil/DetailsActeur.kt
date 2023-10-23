@@ -73,7 +73,7 @@ fun DetailsActeur(windowClass: WindowSizeClass, navController: NavController, ac
             TopAppBar(title = { Text("Détails Acteur") },
                 navigationIcon ={
                     IconButton(
-                        onClick = { navController.navigate("actors") },
+                        onClick = { navController.popBackStack()},
                         modifier = Modifier.padding(10.dp)
                     ) {
                         Icon(

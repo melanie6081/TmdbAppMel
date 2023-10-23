@@ -18,7 +18,7 @@ class MainViewModel : ViewModel() {
     val movies = MutableStateFlow<List<TmdbMovie>>(listOf())
     val movie = MutableStateFlow<TmdbMovieDetails>(TmdbMovieDetails())
     val series = MutableStateFlow<List<Serie>>(listOf())
-    val serie = MutableStateFlow<Serie>(Serie())
+    val serie = MutableStateFlow<TmdbSerieDetail>(TmdbSerieDetail())
     val acteurs = MutableStateFlow<List<Actor>>(listOf())
     val acteur = MutableStateFlow<TmdbActorDetails>(TmdbActorDetails())
 

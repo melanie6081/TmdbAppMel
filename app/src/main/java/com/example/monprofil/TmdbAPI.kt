@@ -31,7 +31,7 @@ interface TmdbAPI {
     suspend fun seriesearched(@Query("query") query: String, @Query("api_key")api_key: String, @Query("language")language: String): TmdbSeriesResult
 
     @GET("tv/{id}?append_to_response=credits")
-    suspend fun seriedetails(@Path("id")id:String, @Query("api_key")api_key: String, @Query("language")language: String): Serie
+    suspend fun seriedetails(@Path("id")id:String, @Query("api_key")api_key: String, @Query("language")language: String): TmdbSerieDetail
 
 
     @GET("trending/person/week")
