@@ -250,6 +250,7 @@ fun DetailsActeur(windowClass: WindowSizeClass, navController: NavController, ac
                                         fontSize = 15.sp
                                     )
                                 }
+
                             }
                             // Synopsis
                             Column(

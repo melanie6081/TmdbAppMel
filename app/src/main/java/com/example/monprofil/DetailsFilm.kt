@@ -137,10 +137,9 @@ fun DetailsFilm(windowClass: WindowSizeClass, navController: NavController, film
                             if(movie.release_date != null){
                                 checkReleaseDate = Pattern.matches("^\\d{4}-\\d{2}-\\d{2}\$\n", movie.release_date)
                             }
-                            if(movie.release_date != "" && checkReleaseDate){
+                            if(checkReleaseDate){
                                 Text(
-                                    text = "date de sortie du film",
-                                    //text = stringToDate(movie.release_date),
+                                    text = stringToDate(movie.release_date),
                                     color = Color.Gray,
                                     modifier = Modifier.padding(top = 15.dp),
                                     fontSize = 15.sp

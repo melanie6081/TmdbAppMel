@@ -129,7 +129,7 @@ fun DetailsSerie(windowClass: WindowSizeClass, navController: NavController, ser
                             if(serie.first_air_date != null){
                                 checkDate = Pattern.matches("^\\d{4}-\\d{2}-\\d{2}\$\n", serie.first_air_date)
                             }
-                            if(serie.first_air_date != "" && checkDate){
+                            if(checkDate){
                                 Text(
                                     text = "date de sortie du film",
                                     //text = stringToDate(movie.release_date),
