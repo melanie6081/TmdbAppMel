@@ -78,7 +78,7 @@ fun DetailsSerie(windowClass: WindowSizeClass, navController: NavController, ser
     ){
         Box(modifier = Modifier.padding(it)){
             LazyColumn() {
-                // Titre + Image de fond du film
+           
                 item {
                     Column(
                         verticalArrangement = Arrangement.Center,
@@ -104,7 +104,7 @@ fun DetailsSerie(windowClass: WindowSizeClass, navController: NavController, ser
                         )
                     }
                 }
-                // Affiche + Date de sortie + Genre
+              
                 item {
                     Row(
                         verticalAlignment = Alignment.Top,
@@ -131,8 +131,8 @@ fun DetailsSerie(windowClass: WindowSizeClass, navController: NavController, ser
                             }
                             if(checkDate){
                                 Text(
-                                    text = "date de sortie du film",
-                                    //text = stringToDate(movie.release_date),
+                                    //text = "date de sortie du film",
+                                    text = stringToDate(movie.release_date),
                                     color = Color.Gray,
                                     modifier = Modifier.padding(top = 15.dp),
                                     fontSize = 15.sp
@@ -147,7 +147,7 @@ fun DetailsSerie(windowClass: WindowSizeClass, navController: NavController, ser
                         }
                     }
                 }
-                // Synopsis
+       
                 item {
                     Column(
                         horizontalAlignment = Alignment.Start,
@@ -166,7 +166,7 @@ fun DetailsSerie(windowClass: WindowSizeClass, navController: NavController, ser
                         )
                     }
                 }
-                // Têtes d'affiches
+       
                 if(serie.credits.cast.isNotEmpty()){
                     item {
                         Text(
