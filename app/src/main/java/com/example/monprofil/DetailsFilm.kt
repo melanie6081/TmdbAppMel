@@ -86,7 +86,7 @@ fun DetailsFilm(windowClass: WindowSizeClass, navController: NavController, film
     ){
         Box(modifier = Modifier.padding(it)){
             LazyColumn() {
-                // Titre + Image de fond du film
+                
                 item {
                     Column(
                         verticalArrangement = Arrangement.Center,
@@ -112,7 +112,7 @@ fun DetailsFilm(windowClass: WindowSizeClass, navController: NavController, film
                         )
                     }
                 }
-                // Affiche + Date de sortie + Genre
+               
                 item {
                     Row(
                         verticalAlignment = Alignment.Top,
@@ -154,7 +154,7 @@ fun DetailsFilm(windowClass: WindowSizeClass, navController: NavController, film
                         }
                     }
                 }
-                // Synopsis
+            
                 item {
                     Column(
                         horizontalAlignment = Alignment.Start,
