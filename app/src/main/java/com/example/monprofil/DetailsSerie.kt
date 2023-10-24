@@ -97,7 +97,7 @@ fun DetailsSerie(windowClass: WindowSizeClass, navController: NavController, ser
                                     crossfade(true)
                                     size(600, 600)
                                 }),
-                            contentDescription = "Image film ${serie.name}",
+                            contentDescription = "Image série ${serie.name}",
                             Modifier
                                 .padding(start = 15.dp, end = 15.dp)
                                 .fillMaxWidth()
@@ -117,7 +117,7 @@ fun DetailsSerie(windowClass: WindowSizeClass, navController: NavController, ser
                                     crossfade(true)
                                     size(400, 400)
                                 }),
-                            contentDescription = "Image film ${serie.name}",
+                            contentDescription = "Image série ${serie.name}",
                             Modifier.padding(start = 25.dp, end = 10.dp, top = 5.dp)
                         )
                         Column(
@@ -132,7 +132,7 @@ fun DetailsSerie(windowClass: WindowSizeClass, navController: NavController, ser
                             if(checkDate){
                                 Text(
                                     //text = "date de sortie du film",
-                                    text = stringToDate(movie.release_date),
+                                    text = stringToDate(serie.first_air_date),
                                     color = Color.Gray,
                                     modifier = Modifier.padding(top = 15.dp),
                                     fontSize = 15.sp
@@ -202,7 +202,7 @@ fun DetailsSerie(windowClass: WindowSizeClass, navController: NavController, ser
                                                     400
                                                 )
                                             }),
-                                        contentDescription = "Image film ${cast.name}",
+                                        contentDescription = "Image série ${cast.name}",
                                         Modifier.padding(start = 5.dp, end = 5.dp)
                                     )
                                     Text(
