@@ -96,7 +96,7 @@ fun DetailsActeur(windowClass: WindowSizeClass, navController: NavController, ac
                         Column(verticalArrangement = Arrangement.Center,
                             horizontalAlignment = Alignment.CenterHorizontally,
                             modifier = Modifier.verticalScroll(rememberScrollState())) {
-                            // Nom de la personne
+                            
                             Column(
                                 verticalArrangement = Arrangement.Center,
                             ) {
@@ -122,7 +122,7 @@ fun DetailsActeur(windowClass: WindowSizeClass, navController: NavController, ac
                                     .padding(start = 15.dp, end = 15.dp)
                             )
 
-                            // Affiche + Date de sortie + Genre
+                
                             Column(
                                 verticalArrangement = Arrangement.Center,
                                 horizontalAlignment = Alignment.CenterHorizontally
@@ -161,7 +161,7 @@ fun DetailsActeur(windowClass: WindowSizeClass, navController: NavController, ac
                                     )
                                 }
                             }
-                            // Synopsis
+                            
                             Column(
                                 horizontalAlignment = Alignment.CenterHorizontally,
                                 modifier = Modifier.padding(start = 10.dp)
@@ -186,7 +186,7 @@ fun DetailsActeur(windowClass: WindowSizeClass, navController: NavController, ac
                         Column(verticalArrangement = Arrangement.Center,
                             horizontalAlignment = Alignment.CenterHorizontally,
                             modifier = Modifier.verticalScroll(rememberScrollState())) {
-                            // Nom de la personne
+                            
                             Column(
                                 verticalArrangement = Arrangement.Center,
                             ) {
@@ -212,7 +212,7 @@ fun DetailsActeur(windowClass: WindowSizeClass, navController: NavController, ac
                                     .padding(start = 15.dp, end = 15.dp)
                             )
 
-                            // Affiche + Date de sortie + Genre
+                         
                             Column(
                                 verticalArrangement = Arrangement.Center,
                                 horizontalAlignment = Alignment.CenterHorizontally
@@ -252,7 +252,7 @@ fun DetailsActeur(windowClass: WindowSizeClass, navController: NavController, ac
                                 }
 
                             }
-                            // Synopsis
+                      
                             Column(
                                 horizontalAlignment = Alignment.CenterHorizontally,
                                 modifier = Modifier.padding(start = 10.dp)
